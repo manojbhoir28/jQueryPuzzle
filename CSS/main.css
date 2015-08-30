@@ -1,0 +1,226 @@
+body {
+     font: 62.5% "Trebuchet MS", sans-serif;
+     background-color:#eae7e7;
+}
+#game_object {
+    background-color: #ffffff;
+    
+}
+#PuzzleDiv {
+    position:fixed;
+    top: 15%;
+    left: 35%;
+    height: 403px;
+    width: 403px;
+    padding:2px;
+}
+
+.mb-header {
+    background-image: url('images/main-bg.png'); 
+background-repeat: repeat-x; background-position: -4px;position: absolute;
+    left: 0;
+    top: 0;
+    height: 3em;
+    width: 99.99%;
+    overflow:hidden;
+}
+
+.mb-header div {
+    vertical-align:central; padding-top:8px; padding-left:1em;
+    font-family: Verdana,Arial,sans-serif;  
+    font-weight: 600;
+    float:left; 
+    color: white;
+	font-size: 1.1em;
+}
+
+.mb-footer-buttons {
+ left: 35%;background-repeat: repeat-x; background-position: -4px;position: absolute;
+    text-align:center;
+    bottom: 5em;
+     position:fixed;
+    
+   
+    padding:2px;
+    height: 3em;
+    width:403px
+   
+}
+.mb-footer {
+    background-image: url('images/main-bg.png'); 
+background-repeat: repeat-x; background-position: -4px;position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3em;
+    width: 99.99%;
+    overflow:hidden;
+}
+
+.mb-footer-left {
+    vertical-align:central; padding-top:8px; padding-left:1em;
+    font-family: Verdana,Arial,sans-serif;  
+    font-weight: 600;
+    float:left; 
+    color: white;
+	font-size: 1.1em;
+}
+
+.mb-footer-right {
+    vertical-align:central; padding-top:8px;padding-right:1em; 
+    font-family: Verdana,Arial,sans-serif; 
+    font-weight: 600;
+    text-align: right; 
+    color: white;
+	font-size: 1.1em;
+}
+
+.mb-left-panel {
+    position: absolute; border:1px solid black;
+    left: 0;
+    top: 3em;
+    height:87%;
+    width: 13%;
+    margin:1em;
+    overflow:hidden;
+}
+
+.mb-right-panel {
+    position: absolute; border:1px solid black;
+    right: 0;
+    top: 3em;
+    height:87%;
+    width: 13%;
+    margin:1em;
+    overflow:hidden;
+}
+   
+#board div {
+    background: #ffffff url('Puzzle1.jpg') no-repeat 0 0;
+    cursor: pointer;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    /* css3 shadow 
+    -moz-box-shadow: inset 0 0 20px #555555;
+    -webkit-box-shadow: inset 0 0 20px #555555;
+    -ms-box-shadow: inset 0 0 20px #555555;
+    -o-box-shadow: inset 0 0 20px #555555;
+    box-shadow: inset 0 0 20px #555555;*/
+    
+     -moz-box-shadow: inset 0 0 2px #000000;
+    -webkit-box-shadow: inset 0 0 2px #000000;
+    -ms-box-shadow: inset 0 0 2px #000000;
+    -o-box-shadow: inset 0 0 2px #000000;
+    box-shadow: inset 0 0 2px #000000; 
+}
+
+.panel-sub-window-1 {
+    position: absolute; border:1px solid black;
+    cursor: pointer;
+    top:5%;
+    width:89%;
+    height:15%;
+    margin:5%;
+    text-align:center;
+    vertical-align:middle;
+    background-color:white;
+}
+
+.panel-sub-window-2 {
+    position: absolute; border:1px solid black;
+    cursor: pointer;
+    top:25%;
+    width:89%;
+    height:15%;
+    margin:5%;
+    text-align:center;
+    vertical-align:middle;
+    background-color:white;
+}
+
+.panel-sub-window-3 {
+    position: absolute; border:1px solid black;
+    cursor: pointer;
+    top:45%;
+    width:89%;
+    height:3em;
+    margin:5%;
+    text-align:center;
+    vertical-align:middle;
+    background-color:white;
+}
+
+.panel-sub-window-1 div {
+    padding:0.5em;
+    color:black;
+}
+
+.panel-sub-window-2 div {
+    padding:0.5em;
+    color:black;
+}
+
+.panel-sub-window-3 div {
+    padding:0.5em;
+    color:black;
+}
+
+.game-puzzle-1 {
+    position: absolute; border:1px solid black;
+    cursor: pointer;
+    top:5%;
+    width:89%;
+    height:20%;
+    margin:5%;
+    overflow:hidden; background-image: url('Puzzle1.jpg'); 
+background-repeat: no-repeat;background-size: 100%;
+}
+
+.game-puzzle-2 {
+    position: absolute; border:1px solid black;
+    cursor: pointer;
+    top:27%;
+    width:89%;
+    height:20%;
+    margin:5%;
+    overflow:hidden; background-image: url('Puzzle2.jpg'); 
+background-repeat: no-repeat;background-size: 100%;
+}
+
+.game-puzzle-3 {
+    position: absolute; border:1px solid black;
+    cursor: pointer;
+    top:49%;
+    width:89%;
+    height:20%;
+    margin:5%;
+    overflow:hidden; background-image: url('Puzzle3.jpg'); 
+background-repeat: no-repeat;background-size: 100%;
+}
+
+.game-puzzle-4 {
+    position: absolute; border:1px solid black;
+    cursor: pointer;
+    top:71%;
+    width:89%;
+    height:20%;
+    margin:5%;
+    overflow:hidden; background-image: url('Puzzle4.jpg'); 
+background-repeat: no-repeat;background-size: 100%;
+}
+.custom-menu {
+    z-index:99999;
+    position: absolute;
+    background-color:#2E2E2E;
+	color: #fff;
+    border: 1px solid gray;
+    padding: 3px;
+	font: 62.5% "Trebuchet MS", sans-serif;
+	 border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	font-size: 1.1em;
+	font-family: Verdana,Arial,sans-serif; 
+}
