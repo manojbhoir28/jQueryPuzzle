@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="CSS/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="CSS/jquery-ui.css"/>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <script src="Scripts/main.js"></script>
+</head>
+<body>
+    <div class="mb-header">
+        <div>jQuery Puzzle Game Vsersion 1.0</div>
+    </div>
+
+    <div class="mb-left-panel">
+        <div class="mb-header">
+            <div>Puzzle List</div>
+        </div>
+        <div id="puzzle1" class="game-puzzle-1"></div>
+        <div id="puzzle2" class="game-puzzle-2"></div>
+        <div id="puzzle3" class="game-puzzle-3"></div>
+        <div id="puzzle4" class="game-puzzle-4"></div>
+         <div style="background-image: url('CSS/images/main-bg.png'); background-repeat: repeat-x; background-position: -4px;position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3em;
+    width: 99.99%;
+    overflow:hidden;">
+        <div style="vertical-align:central; padding-top:8px; padding-left:1em;
+    font-family: Verdana,Arial,sans-serif;  
+    font-weight: 600;
+    float:left; 
+    color: white;
+	font-size: 1.1em;">Current : 1</div>
+    </div>
+    </div>
+
+         <div id="PuzzleDiv"  >
+            <div id="game_object"></div>
+
+        </div>
+    <div class="mb-right-panel">
+        <div class="mb-header">
+            <div></div>
+            
+        </div>
+        <div id="Div1" class="panel-sub-window-1">
+            <div><label id="totalmoves" style="font-family: Verdana,Arial,sans-serif;font-size:xx-large;padding-top:2em;
+    font-weight: 900;">0</label></div>
+            <div><label id="Label1" style="font-family: Verdana,Arial,sans-serif;font-size:medium;
+    font-weight: 600;">MOVES</label></div>
+        </div>
+        <div id="Div2" class="panel-sub-window-2">
+            <div><label id="txtscore" style="font-family: Verdana,Arial,sans-serif;font-size:xx-large;padding-top:2em;
+    font-weight: 900;">0</label></div>
+            <div><label id="Label3" style="font-family: Verdana,Arial,sans-serif;font-size:medium;
+    font-weight: 600;">Score</label></div>
+        </div>
+        <div id="Div3" class="panel-sub-window-3">
+            <div id="gamestatus"><label id="lblstatus" style="font-family: Verdana,Arial,sans-serif;font-size:medium;padding-top:2em;
+    font-weight: 900;">New Game</label></div>
+           
+        </div>
+    </div>
+
+    <div class="mb-footer-buttons">
+        <input id="btnShuffle" type="button" value="Start Again" />
+    </div>
+    <div class="mb-footer">
+        <div class="mb-footer-left">Developed By Manoj Kishor Bhoir</div>
+        <div class="mb-footer-right">Copyright © 2015</div>
+    </div>
+  
+    <script>
+        $(document).ready(function () {
+            $('#puzzle1').click(function () {
+                $('#game_object').fifteen(100, 'CSS/Puzzle1.jpg');
+                $("#board").randomize();
+                $('#lblstatus').text('New Game');
+                $('#gamestatus').css('color', 'black');
+            });
+            $('#puzzle2').click(function () {
+                $('#game_object').fifteen(100, 'CSS/Puzzle2.jpg');
+                $("#board").randomize();
+                $('#lblstatus').text('New Game');
+                $('#gamestatus').css('color', 'black');
+            });
+            $('#puzzle3').click(function () {
+                $('#game_object').fifteen(100, 'CSS/Puzzle3.jpg');
+                $("#board").randomize();
+                $('#lblstatus').text('New Game');
+                $('#gamestatus').css('color', 'black');
+            });
+            $('#puzzle4').click(function () {
+                $('#game_object').fifteen(100, 'CSS/Puzzle4.jpg');
+                $("#board").randomize();
+                $('#lblstatus').text('New Game');
+                $('#gamestatus').css('color', 'black');
+            });
+        });
+        
+        $(function () {
+            $("#btnShuffle")
+              .button()
+              .click(function (event) {
+                  $("#board").randomize("div");
+                  $('#lblstatus').text('New Game');
+                  $('#gamestatus').css('color', 'black');
+              });
+        });
+       
+        $('button').click(function () {
+            $("#board").randomize();
+        });
+    </script>
+</body>
+</html>
